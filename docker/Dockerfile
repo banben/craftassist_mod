@@ -24,7 +24,7 @@ RUN apt-get install -y \
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
 RUN apt-get -y install nodejs
 
-RUN pip3 install torch
+RUN pip3 install torch -i https://mirrors.aliyun.com/pypi/simple/
 
 
 # Install Git LFS
