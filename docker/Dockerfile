@@ -45,7 +45,7 @@ RUN curl http://craftassist.s3-us-west-2.amazonaws.com/pubr/models_folder.tar.gz
 RUN tar -xzvf models_folder.tar.gz -C python/craftassist/models/ --strip-components 1
 RUN make
 
-RUN pip3 install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/
+RUN pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
 RUN mkdir workdir
 WORKDIR workdir
