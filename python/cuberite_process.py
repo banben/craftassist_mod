@@ -149,6 +149,8 @@ if __name__ == "__main__":
         if args.random_shapes:
             # TODO allow both?
             print("warning: ignoring the schematic and using random shapes")
+    import pdb
+    pdb.set_trace()
     if args.random_shapes:
         schematic = build_shape_scene()
 
