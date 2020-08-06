@@ -23,7 +23,7 @@ function OnPlayerSpawned(player)
     local Roll = 0
     local Pitch = 43.799514770508
     local Yaw = 2.9998693466187
-    player:Freeze(Vector3d(x, y, z))
+    -- player:Freeze(Vector3d(x, y, z))
     player:SetRoll(Roll)
     player:SetPitch(Pitch)
     player:SetYaw(Yaw)
