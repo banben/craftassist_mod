@@ -24,5 +24,6 @@ function OnPlayerSpawned(player)
 end
 
 function OnPlayerMoving(player)
-    LOG(player:GetPosition())
+    local Pos = player:GetPosition()
+    print(Pos)
 end
