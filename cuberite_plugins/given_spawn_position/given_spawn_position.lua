@@ -16,7 +16,7 @@ function Initialize(Plugin)
 end
 
 function OnPlayerSpawned(player)
-    x = 100.50
+    x = 10.50
     y = 63.00 -- height
     z = 0.50
     player:TeleportToCoords(x, y, z)
