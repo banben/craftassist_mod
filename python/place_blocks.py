@@ -6,6 +6,8 @@ Copyright (c) Facebook, Inc. and its affiliates.
 def yzx_to_dicts(yzx, y_offset=63):
     """Converts yzx format array into a dictionary
     with keys: x, y, z, id and meta"""
+    import pdb
+    pdb.set_trace()
     yzx = yzx["schematic"]
     ysize, zsize, xsize, _ = yzx.shape
     if ysize + y_offset > 255:

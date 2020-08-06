@@ -153,9 +153,6 @@ if __name__ == "__main__":
         schematic = build_shape_scene()
         # schematic [{'x': -4, 'y': 71, 'z': -5, 'id': 22, 'meta': 0}]
 
-    import pdb
-    pdb.set_trace()
-
     p = CuberiteProcess(
         args.config,
         seed=args.seed,
