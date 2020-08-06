@@ -25,5 +25,8 @@ end
 
 function OnPlayerMoving(player)
     local Pos = player:GetPosition()
-    print('x:'..tostring(Pos.x), 'y:'..tostring(Pos.y), 'z:'..tostring(Pos.z))
+    local Roll = player:GetRoll()
+    local Pitch = player:GetPitch()
+    local Yaw = player:GetYaw()
+    print('x:'..tostring(Pos.x), 'y:'..tostring(Pos.y), 'z:'..tostring(Pos.z), 'roll:'..tostring(Roll), 'pitch:'..tostring(Roll), 'yaw:'..tostring(Yaw))
 end
