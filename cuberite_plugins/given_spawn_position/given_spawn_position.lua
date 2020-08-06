@@ -17,7 +17,7 @@ end
 
 function OnPlayerSpawned(player)
     x = 0.50
-    y = 63.00
+    y = 163.00
     z = 0.50
     player:TeleportToCoords(x, y, z)
 end
