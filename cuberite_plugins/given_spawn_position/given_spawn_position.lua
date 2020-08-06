@@ -9,6 +9,7 @@ function Initialize(Plugin)
 
     PLUGIN = Plugin
     cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_SPAWNED, OnPlayerSpawned)
+    cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_MOVING, OnPlayerMoving)
 
     LOG("Loaded plugin: GivenStartPosition")
     math.randomseed(0)
@@ -19,5 +20,9 @@ function OnPlayerSpawned(player)
     x = -0.50
     y = 68.00 -- height
     z = 5.50
-    player:Freeze(Vector3d(x, y, z))
+    -- player:Freeze(Vector3d(x, y, z))
+end
+
+function OnPlayerMoving(player)
+    LOG(player:GetPosition())
 end
