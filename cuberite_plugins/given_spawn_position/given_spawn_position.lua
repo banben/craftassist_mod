@@ -16,7 +16,7 @@ function Initialize(Plugin)
 end
 
 function OnPlayerSpawned(player)
-    x = 0.50
+    x = -5.50
     y = 68.00 -- height
     z = 0.50
     player:Freeze(Vector3d(x, y, z))
