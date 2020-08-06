@@ -145,15 +145,13 @@ if __name__ == "__main__":
     schematic = None
     # if args.npy_schematic, load the schematic when starting
     if args.npy_schematic:
-        schematic = np.load(args.npy_schematic)
+        schematic = np.load(args.npy_schematic, allow_pickle=True)
         if args.random_shapes:
             # TODO allow both?
             print("warning: ignoring the schematic and using random shapes")
     if args.random_shapes:
         schematic = build_shape_scene()
-
-    import pdb
-    pdb.set_trace()
+        # schematic [{'x': -4, 'y': 71, 'z': -5, 'id': 22, 'meta': 0}]
 
     p = CuberiteProcess(
         args.config,
