@@ -20,7 +20,7 @@ function OnPlayerSpawned(player)
     x = 20.103118832918
     y = 68.751071381222 -- height
     z = 37.831284557496
-    player:Freeze(Vector3d(x, y, z))
+    -- player:Freeze(Vector3d(x, y, z))
 end
 
 function OnPlayerMoving(player)
