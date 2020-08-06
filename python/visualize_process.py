@@ -18,6 +18,8 @@ import repo
 from wait_for_cuberite import wait_for_cuberite
 from craftassist.shape_helpers import build_shape_scene
 
+import pickle
+
 logging.basicConfig(format="%(asctime)s [%(levelname)s]: %(message)s")
 logging.getLogger().setLevel(logging.DEBUG)
 
@@ -145,7 +147,9 @@ if __name__ == "__main__":
     schematic = None
     # if args.npy_schematic, load the schematic when starting
     if args.npy_schematic:
-        schematic = np.load(args.npy_schematic, allow_pickle=True)
+        # schematic = np.load(args.npy_schematic, allow_pickle=True)
+        with open(args.npy_schematic, "rb") as f:
+            schematic = pickle.load(f)
         if args.random_shapes:
             # TODO allow both?
             print("warning: ignoring the schematic and using random shapes")
