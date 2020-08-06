@@ -1,1 +1,1 @@
-python3 python/visualize_process.py --config flat_world --npy_schematic ~/houses/workdir.2018-06-23-21:51:11.ip-172-31-12-6/schematic.npy
+python3 python/visualize_process.py --config flat_world --npy_schematic ~/schematics/half_done_0.npy
