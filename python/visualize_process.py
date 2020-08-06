@@ -150,6 +150,7 @@ if __name__ == "__main__":
         # schematic = np.load(args.npy_schematic, allow_pickle=True)
         with open(args.npy_schematic, "rb") as f:
             schematic = pickle.load(f)
+            schematic = schematic[:len(schematic)-20]
         if args.random_shapes:
             # TODO allow both?
             print("warning: ignoring the schematic and using random shapes")
