@@ -1,1 +1,1 @@
-python3 python/visualize_process.py --config flat_world --npy_schematic ~/schematics/half_done_0.npy
+python3 python/visualize_process.py --config flat_world --npy_schematic ~/schematics/half_done_0.pkl
