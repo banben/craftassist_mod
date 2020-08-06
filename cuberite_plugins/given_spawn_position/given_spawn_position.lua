@@ -20,5 +20,5 @@ function OnPlayerSpawned(player)
     y = 163.00 -- height
     z = 0.50
     -- player:TeleportToCoords(x, y, z)
-    player:Freeze(x, y, z)
+    player:Freeze(Vector3d(x, y, z))
 end
