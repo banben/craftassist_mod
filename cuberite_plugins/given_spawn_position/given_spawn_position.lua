@@ -17,13 +17,13 @@ function Initialize(Plugin)
 end
 
 function OnPlayerSpawned(player)
-    x = -0.50
-    y = 68.00 -- height
-    z = 5.50
-    -- player:Freeze(Vector3d(x, y, z))
+    x = 20.103118832918
+    y = 68.751071381222 -- height
+    z = 37.831284557496
+    player:Freeze(Vector3d(x, y, z))
 end
 
 function OnPlayerMoving(player)
     local Pos = player:GetPosition()
-    print(Pos.x, Pos.y, Pos.z)
+    print('x:'+Pos.x, 'y:'+Pos.y, 'z:'+Pos.z)
 end
