@@ -17,7 +17,7 @@ end
 
 function OnPlayerSpawned(player)
     x = 0.50
-    y = 73.00 -- height
+    y = 68.00 -- height
     z = 0.50
     player:Freeze(Vector3d(x, y, z))
 end
