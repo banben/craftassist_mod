@@ -17,7 +17,6 @@ function Initialize(Plugin)
 end
 
 function OnPlayerSpawned(player)
-    x:2.1603494419838   y:70.36813634837    z:6.3393160880792   roll:0  pitch:44.099384307861   yaw:179.9997253418
     local x = 2.1603494419838
     local y = 70.36813634837 -- height
     local z = 6.3393160880792
