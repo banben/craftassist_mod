@@ -25,5 +25,5 @@ end
 
 function OnPlayerMoving(player)
     local Pos = player:GetPosition()
-    print('x:'+tostring(Pos.x), 'y:'+tostring(Pos.y), 'z:'+tostring(Pos.z))
+    print(tostring(Pos.x), tostring(Pos.y), tostring(Pos.z))
 end
