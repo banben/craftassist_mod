@@ -152,6 +152,9 @@ if __name__ == "__main__":
     if args.random_shapes:
         schematic = build_shape_scene()
 
+    import pdb
+    pdb.set_trace()
+
     p = CuberiteProcess(
         args.config,
         seed=args.seed,
