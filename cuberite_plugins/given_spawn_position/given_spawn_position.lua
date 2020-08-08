@@ -9,8 +9,8 @@ function Initialize(Plugin)
 
     PLUGIN = Plugin
     cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_SPAWNED, OnPlayerSpawned)
-    -- cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_MOVING, OnPlayerMoving)
-    cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_BREAKING_BLOCK, OnPlayerBreakingBlock)
+    cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_MOVING, OnPlayerMoving)
+    -- cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_BREAKING_BLOCK, OnPlayerBreakingBlock)
 
     LOG("Loaded plugin: GivenStartPosition")
     math.randomseed(0)
@@ -24,7 +24,7 @@ function OnPlayerSpawned(player)
     local Roll = 0
     local Pitch = 40.798984527588
     local Yaw = 91.94750213623
-    -- player:Freeze(Vector3d(x, y, z))
+    player:Freeze(Vector3d(x, y, z))
     player:SetRoll(Roll)
     player:SetPitch(Pitch)
     player:SetYaw(Yaw)
