@@ -18,13 +18,13 @@ function Initialize(Plugin)
 end
 
 function OnPlayerSpawned(player)
-    local x = -4.6659293747492
-    local y = 69.301222412827 -- height
-    local z = -8.632181055806
+    local x = -3.3726953831572
+    local y = 72.238239619938 -- height
+    local z = -7.4457397249562
     local Roll = 0
-    local Pitch = 22.648979187012
-    local Yaw = -1.2024536132812
-    -- player:Freeze(Vector3d(x, y, z))
+    local Pitch = 40.498989105225
+    local Yaw = 0.44756075739861
+    player:Freeze(Vector3d(x, y, z))
     player:SetRoll(Roll)
     player:SetPitch(Pitch)
     player:SetYaw(Yaw)
