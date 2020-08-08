@@ -38,6 +38,6 @@ function OnPlayerMoving(player)
     print('x:'..tostring(Pos.x), 'y:'..tostring(Pos.y), 'z:'..tostring(Pos.z), 'roll:'..tostring(Roll), 'pitch:'..tostring(Pitch), 'yaw:'..tostring(Yaw))
 end
 
-function OnPlayerSpawned(player, blockx, blocky, blockz, blockface, blocktype, blockmeta)
+function OnPlayerBreakingBlock(player, blockx, blocky, blockz, blockface, blocktype, blockmeta)
     print('blockx:'..tostring(blockx), 'blocky:'..tostring(blocky), 'blockz:'..tostring(blockz), 'blocktype:'..tostring(blocktype), 'blockmeta:'..tostring(blockmeta))
 end
