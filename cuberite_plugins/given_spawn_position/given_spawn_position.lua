@@ -10,6 +10,7 @@ function Initialize(Plugin)
     PLUGIN = Plugin
     cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_SPAWNED, OnPlayerSpawned)
     cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_MOVING, OnPlayerMoving)
+    cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_BREAKING_BLOCK, OnPlayerBreakingBlock)
 
     LOG("Loaded plugin: GivenStartPosition")
     math.randomseed(0)
@@ -35,4 +36,8 @@ function OnPlayerMoving(player)
     local Pitch = player:GetPitch()
     local Yaw = player:GetYaw()
     print('x:'..tostring(Pos.x), 'y:'..tostring(Pos.y), 'z:'..tostring(Pos.z), 'roll:'..tostring(Roll), 'pitch:'..tostring(Pitch), 'yaw:'..tostring(Yaw))
+end
+
+function OnPlayerSpawned(player, blockx, blocky, blockz, blockface, blocktype, blockmeta)
+    print('blockx:'..tostring(blockx), 'blocky:'..tostring(blocky), 'blockz:'..tostring(blockz), 'blocktype:'..tostring(blocktype), 'blockmeta:'..tostring(blockmeta))
 end
